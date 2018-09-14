@@ -1,9 +1,0 @@
-_site
-.sass-cache
-.jekyll-metadata
-
-# Ignore ruby files
-.ruby-version
-.bundle
-vendor/cache
-vendor/bundle
