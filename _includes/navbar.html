@@ -1,0 +1,10 @@
+<ul class="nav">
+  {% for item in site.data.nav.itens %}
+    <li class="nav-item">
+      <a class="nav-link {% if page.url == item.url %}disabled{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+    </li>
+  {% endfor%}
+  <li class="nav-item">
+    <a class="nav-link" href="#">Item</a>
+  </li>
+</ul>

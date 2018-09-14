@@ -1,7 +1,10 @@
 version: "3"
 services:
   site:
-    command: jekyll serve
+    # command: jekyll serve
+    command: >
+        bash -c "make build
+        && jekyll serve"
     image: jekyll/jekyll:latest
     volumes:
       - $PWD:/srv/jekyll
