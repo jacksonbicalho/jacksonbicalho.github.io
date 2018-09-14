@@ -1,0 +1,9 @@
+itens:
+
+-
+  title: Página principal
+  url: index.html
+
+-
+  title: Sobre
+  url: sobre.html
