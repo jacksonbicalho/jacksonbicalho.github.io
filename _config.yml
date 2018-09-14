@@ -30,6 +30,23 @@ theme: minima
 plugins:
   - jekyll-feed
 
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+
+
+# exclude: []
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
