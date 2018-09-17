@@ -1,15 +1,25 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/vendor/css/bootstrap.min.css' | relative_url }}" />
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
-    <link href="https://fonts.googleapis.com/css?family=Alegreya|Bitter|Crete+Round|Faustina|Glegoo|Manuale|Roboto+Slab|Source+Serif+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Bitter|Crete+Round|Faustina|Glegoo|Manuale|Roboto+Slab|Source+Serif+Pro"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=recentCabin|PT+Sans|Source+Sans+Pro" rel="stylesheet">
-  </head>
-  <body>
-    {% include header.html %}
-    <!-- {{ content }} -->
-  </body>
+</head>
+
+<body>
+    <div class="container">
+        {% include header.html %}
+        <div class="row">
+            <div class="col-md-12">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>

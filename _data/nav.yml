@@ -1,5 +1,8 @@
 itens:
 
--
-  title: Sobre
+
+- title: Página Inicial
+  url: /
+
+- title: Sobre
   url: /sobre.html

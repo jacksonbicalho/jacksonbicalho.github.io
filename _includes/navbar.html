@@ -1,26 +1,15 @@
-<!-- <ul class="nav">
-  {% for item in site.data.nav.itens %}
-    <li class="nav-item">
-      <a class="nav-link {% if page.url == item.url %}disabled{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
-    </li>
-  {% endfor%}
-  <li class="nav-item">
-    <a class="nav-link" href="#">Item</a>
-  </li>
-</ul> -->
-
-
-<div class="blog-masthead">
-    <div class="container">
-      <nav class="nav">
-        <a class="nav-link active" href="/">Home</a>
-        <a class="nav-link" href="/articles/">Articles</a>
-        <a class="nav-link" href="/videos/">Videos</a>
-        <!-- <a class="nav-link" href="/music/">Music</a> -->
-        <a class="nav-link" href="https://twitter.com/daviwil" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
-        <a class="nav-link" href="https://github.com/daviwil" target="_blank"><i class="fa fa-github fa-lg"></i></a>
-        <a class="nav-link" href="https://soundcloud.com/daviwil" target="_blank"><i class="fa fa-soundcloud fa-lg"></i></a>
-        <a class="nav-link" href="https://youtube.com/c/the_dev_aspect" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
-      </nav>
-    </div>
-  </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+		aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse">
+		<ul class="navbar-nav mr-auto">
+		{% for item in site.data.nav.itens %}
+			<li class="nav-item">
+				<a class="nav-link {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+			</li>
+		{% endfor%}
+		</ul>
+	</div>
+</nav>
