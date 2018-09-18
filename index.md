@@ -8,7 +8,7 @@ title: Home
         <h2 class="entry-title post-title">
             <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
         </h2>
-        <p> {{ post.date | date_time_long }} </p>
+        <p> {% include post_date_time_br.html %} </p>
     {% endfor %}
 </div>
 
