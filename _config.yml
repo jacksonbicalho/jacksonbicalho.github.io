@@ -34,7 +34,7 @@ sass:
     - _sass
     - node_modules
 
-timezone: America/Sao_Paulo
+timezone: UTC
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
