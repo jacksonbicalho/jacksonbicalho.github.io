@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya|Bitter|Crete+Round|Faustina|Glegoo|Manuale|Roboto+Slab|Source+Serif+Pro"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=recentCabin|PT+Sans|Source+Sans+Pro" rel="stylesheet">
+    {% if page.style %}
+        <link rel="stylesheet" href="{{ page.style }}">
+    {% endif %}
 </head>
 
 <body>
