@@ -8,9 +8,10 @@ title: Home
         <h2 class="entry-title post-title">
             <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
         </h2>
-<p>{{ ((post.content | split:'<!--excerpt.start-->' | last) | split: '<!--excerpt.end-->' | first) | strip_html | truncatewords: 50 }}
+        <p> {{ post.date | date_time_long }} </p>
     {% endfor %}
-</p>
+</div>
+
 
 
 
