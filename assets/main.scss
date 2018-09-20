@@ -2,3 +2,26 @@
 ---
 
 @import "variables";
+
+$font-family-base: Arial, Helvetica, sans-serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+header{
+  padding-top: 1rem;
+  h1{
+    a{
+      font-size: $h2-font-size;
+      font-weight: bold;
+      color: $gray-700;
+      &:hover{
+        text-decoration: none;
+        color: $gray-800;
+      }
+    }
+  }
+}
+#conteudo{
+  padding-top: 1rem;
+}

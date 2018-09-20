@@ -3,12 +3,11 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="theme-color" content="#db5945">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/vendor/css/bootstrap.min.css' | relative_url }}" />
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
-    <link href="https://fonts.googleapis.com/css?family=Alegreya|Bitter|Crete+Round|Faustina|Glegoo|Manuale|Roboto+Slab|Source+Serif+Pro"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=recentCabin|PT+Sans|Source+Sans+Pro" rel="stylesheet">
     {% if page.style %}
         <link rel="stylesheet" href="{{ page.style }}">
     {% endif %}
@@ -18,7 +17,7 @@
     <div class="container">
         {% include header.html %}
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" id="conteudo" >
                 {{ content }}
             </div>
         </div>
