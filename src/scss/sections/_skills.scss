@@ -1,0 +1,50 @@
+//
+// Skills
+//
+
+.skills {
+    .skills-item {
+        // cursor: pointer;
+        position: relative;
+        display: block;
+        max-width: 35rem;
+        border-radius: $border-radius;
+        overflow: hidden;
+
+        // .skills-item-caption {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     transition: $transition-base;
+        //     opacity: 0;
+        //     background-color: fade-out($primary, .1);
+
+        //     // &:hover {
+        //     //     opacity: 1;
+        //     // }
+
+        //     .skills-item-caption-content {
+        //         font-size: 1.5rem;
+        //     }
+        // }
+    }
+}
+
+// Styling for the skills modals
+.skills-modal {
+    .btn-close {
+        color: $primary;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .skills-modal-title {
+        font-size: 2.25rem;
+        line-height: 2rem;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 3rem;
+            line-height: 2.5rem;
+        }
+    }
+}

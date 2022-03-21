@@ -1,0 +1,27 @@
+//
+// Styles
+//
+
+// Import custom variables and override default Bootstrap variables
+@import "./variables.scss";
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+/* Import fontawesome */
+$fa-font-path: "../assets/webfonts";
+@import "./fontawesome-free-6.1.0-web/scss/solid.scss";
+
+// Import custom styles
+@import "./global.scss";
+
+// Components
+@import "./components/divider.scss";
+@import "./components/buttons.scss";
+@import "./components/navbar.scss";
+@import "./components/forms.scss";
+
+// Sections
+@import "./sections/masthead.scss";
+@import "./sections/skills.scss";
+@import "./sections/footer.scss";
